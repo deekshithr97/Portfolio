@@ -4,6 +4,11 @@ body {
 }
 .card-bg {
     background-color: #1C1C1C;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-bg:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 .border-subtle {
     border-color: #2D2D2D;
@@ -16,4 +21,11 @@ body {
 }
 .text-tertiary {
     color: #71717A;
+}
+
+/* Project card image styles */
+.project-image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px 8px 0 0;
 }
